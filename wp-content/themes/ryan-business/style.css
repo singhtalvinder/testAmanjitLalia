@@ -1,0 +1,485 @@
+/*
+Theme Name: Ryan Business
+Theme URI: https://www.thinkupthemes.com/free/ryan/
+Author: Think Up Themes
+Author URI: https://www.thinkupthemes.com
+Description: Ryan Business is the free version of the multi-purpose professional theme (Ryan Pro) ideal for a business or blog website. The theme has a responsive layout, HD retina ready and comes with a powerful theme options panel with can be used to make awesome changes without touching any code. The theme also comes with a full width easy to use slider. Easily add a logo to your site and create a beautiful homepage using the built-in homepage layout. Compatible with WooCommerce, WPML, Polylang, Flat Parallax Slider, Photo Gallery and Travel Map, Elementor, Page Builder, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. It's a perfect theme for small businesses (restaurants, wedding planners, sport/medical shops), startups, corporate businesses, online agencies and firms, portfolios, ecommerce (WooCommerce), and freelancers.
+Template: ryan
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-header, custom-menu, full-width-template, theme-options, threaded-comments, editor-style, featured-images, featured-image-header, post-formats, sticky-post, translation-ready, flexible-header, custom-background, grid-layout, footer-widgets, blog, e-commerce, portfolio, rtl-language-support
+Text Domain: ryan-business
+*/
+
+/* General */
+body,
+button,
+input,
+select,
+textarea {
+	font-size: 14px;
+}
+
+/* Pre Header Style */
+#pre-header-core {
+	text-align: center;
+}
+#pre-header {
+	border-bottom: none;
+}
+#pre-header-links-inner {
+	display: inline-block;
+}
+#pre-header .header-links > ul > li > a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+#pre-header .header-links > ul > li:after {
+	display: none;
+}
+#pre-header .header-links .menu-hover > a,
+#pre-header .header-links > ul > li > a:hover,
+#pre-header .header-links > ul > li.current_page_item > a {
+	background-color: #232323;
+}
+#pre-header .header-links .sub-menu {
+	text-align: left;
+}
+#pre-header .header-links .sub-menu a {
+	background-color: #232323;
+	color: #fff;
+}
+#pre-header .header-links .sub-menu li {
+	border-bottom: 1px solid #343434;
+}
+#pre-header .header-links .sub-menu li:last-child a {
+	border-bottom: none;
+}
+
+/* Header Style */
+#logo,
+#logo-sticky {
+	margin-top: 45px;
+}
+#header .header-links > ul > li a,
+#header-sticky .header-links > ul > li a {
+	text-transform: uppercase;
+}
+#header .header-links .sub-menu,
+#header-sticky .header-links .sub-menu {
+	background-color: #232323;
+	box-shadow: none;
+}
+#header .header-links > ul > li > .sub-menu,
+#header-sticky .header-links > ul > li >  .sub-menu {
+	margin-top: -20px;
+}
+#header .sub-menu li {
+	border-bottom: 1px solid #343434;
+}
+#header .header-links .sub-menu a {
+	color: #fff;
+	text-transform: capitalize;
+}
+#header-search .fa-search {
+	height: 40px;
+	line-height: 40px;
+}
+#header-search .search {
+	height: 40px;
+	outline: none;
+}
+
+/* Slider Style */
+#slider .rslides_tabs li a {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+
+/* Call To Action Style */
+#introaction {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 60px;
+}
+.action-text h3 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.themebutton,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: #121212;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	border-radius: 5px;
+}
+.themebutton:hover,
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background-color: #454545;
+	color: #fff;
+	border-color: #454545;
+}
+
+/* Featured Style */
+.icontext .iconimage,
+.iconfull.style1 .iconimage {
+	float: none!important;
+}
+.iconfull.style1 .iconimage i {
+	font-size: 80px;
+	background-color: #121212;
+	color: #fff;
+	text-align: center;
+	width: 160px;
+	height: 160px;
+	line-height: 160px;
+	border-radius: 50%;
+}
+.iconfull.style1 .iconmain h3 {
+	font-weight: 400;
+	position: relative;
+	margin-bottom: 35px;
+}
+.iconfull.style1 .iconmain h3::after {
+	text-align: center;
+	width: 45px;
+	height: 3px;
+	background-color: #121212;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -20px;
+}
+.iconfull.style1 .iconurl > a,
+.iconfull.style2 .iconurl > a {
+	background-color: #121212;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	border-radius: 5px;
+	padding: 5px 20px;
+	margin-top: 20px;
+}
+.iconfull.style1 .iconurl > a:hover,
+.iconfull.style2 .iconurl > a:hover {
+	background-color: #454545;
+}
+
+/* Footer Style */
+#footer-core {
+	border-top: none;
+}
+#sub-footer-core {
+	border-top: none;
+}
+#footer {
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+}
+#sub-footer {
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+}
+#footer-core h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	position: relative;
+	margin-bottom: 40px;
+}
+#footer-core h3::after {
+	width: 45px;
+	height: 3px;
+	background-color: #121212;
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -10px;
+}
+#footer .widget li span {
+	display: block;
+	font-size: 13px;
+	color: #bbb;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#footer .widget li a {
+	font-size: 17px;
+	color: #121212;
+	font-weight: 300;
+}
+#footer .widget li a:hover {
+	color: #aaa;
+}
+#footer .widget_recent_comments li span {
+	display: inline-block;
+}
+#footer .widget_search .search {
+	outline: none;
+	color: #121212;
+	background-color: #eee;
+}
+#sub-footer-core .copyright {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Page Heading Style */
+#intro.option2 .page-title {
+	width: 100%;
+	text-align: center;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+#intro.option2 #breadcrumbs {
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+}
+#intro.option2 .page-title,
+#intro.option2 #breadcrumbs {
+	display: inline-block;
+	text-transform: uppercase;
+}
+#intro {
+	background-color: #f5f5f5;
+}
+
+/* Blog Posts Style */
+.blog-article.sticky {
+	background-color: #fff;
+	padding: 0px;
+}
+.blog-article.sticky .entry-content {
+	background-color: #fff;
+	padding: 0px;
+}
+.blog-article .entry-meta > span {
+	margin-right: 5px;
+	background-color: #f5f5f5;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 5px 7px;
+}
+.blog-article .entry-meta > span:before {
+	display: none;
+}
+.blog-article .entry-meta a {
+	color: #121212;
+}
+.blog-article .entry-meta a:hover {
+	color: #aaa;
+}
+.blog-article .entry-meta .sticky i {
+	margin-right: 3px;
+}
+.blog-article .blog-title {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+.blog-article .more-link {
+	text-align: left;
+}
+.blog-article .more-link a {
+	background-color: #121212;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+.blog-article .more-link a:hover {
+	background-color: #454545;
+}
+
+/* Side Bar Style */
+.widget_search .search {
+	outline: none;
+	background-color: #eee;
+	border-color: transparent;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus {
+	background-color: #eee;
+}
+#sidebar h3.widget-title {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	position: relative;
+	margin-bottom: 40px;
+}
+#sidebar h3.widget-title::after {
+	width: 45px;
+	height: 3px;
+	background-color: #121212;
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -10px;
+}
+.widget li a {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+}
+.widget_tag_cloud a {
+	border: none;
+	background-color: #eee;
+	color: #121212;
+	text-transform: capitalize;
+}
+.widget_tag_cloud a:hover {
+	color: #fff;
+	background-color: #121212;
+}
+
+/* Page Navigation Style */
+.navigation.pagination .nav-links a,
+.navigation.pagination .nav-links span {
+	background-color: #eee;
+	color: #121212;
+	border: none;
+}
+.navigation.pagination .nav-links a:hover,
+.navigation.pagination .nav-links a.current,
+.navigation.pagination .nav-links span:hover,
+.navigation.pagination .nav-links span.current {
+	background-color: #121212;
+	color: #fff;
+	border: none;
+}
+.navigation.pagination .nav-links .dots:hover {
+	border: none;
+}
+
+/* Single Post Style */
+.single .entry-meta .meta-title {
+	margin-right: 0px;
+}
+.single .entry-meta > span {
+	margin-right: 5px;
+	background-color: #f5f5f5;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 5px 7px;
+}
+.nav-previous a,
+.nav-next a {
+	display: inline-block;
+	background-color: #121212;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+.nav-previous,
+.nav-next {
+	max-width: 100%
+}
+.nav-previous a:hover,
+.nav-next a:hover {
+	background-color: #454545;
+	color: #fff;
+}
+
+/* Comments Style */
+#comments-title h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	position: relative;
+	margin-bottom: 40px;
+}
+#comments-title h3::after {
+	width: 45px;
+	height: 3px;
+	background-color: #121212;
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -10px;
+}
+.comment-author h4 {
+	font-weight: 400;
+	font-size: 16px;
+}
+.comment .reply a {
+	background-color: #eee;
+	border: none;
+	color: #121212;
+}
+.comment .reply a:hover {
+	color: #fff;
+	background-color: #121212;
+}
+.comment-content {
+	margin-top: -20px;
+}
+
+/* Leave Comment Style */ 
+#reply-title {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	position: relative;
+	margin-bottom: 40px;
+}
+#reply-title::after {
+	width: 45px;
+	height: 3px;
+	background-color: #121212;
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -10px;
+}
+#commentform #comment {
+	outline: none;
+	background-color: #eee;
+	border: none;
+}
+.logged-in-as a {
+	color: #121212;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+}
+.logged-in-as a:hover {
+	color: #aaa;
+}
